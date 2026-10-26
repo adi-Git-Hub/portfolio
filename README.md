@@ -3,7 +3,7 @@
 An immersive, interactive developer portfolio built with **Next.js 16**, **React Three Fiber**, and **Tailwind CSS v4**. Features a 3D mechanical keyboard hero scene with verified Backend & DevOps tech stack icons, seasonal themes, smooth scroll animations, bilingual support (English & Hinglish), and an interactive contact modal.
 
 **Target Role:** Backend Developer | DevOps Engineer  
-**Connect:** [LinkedIn](https://www.linkedin.com/in/adityapande) &nbsp;|&nbsp; [GitHub](https://github.com/adi-Git-Hub) &nbsp;|&nbsp; [Email](mailto:aditya.dev.pande@gmail.com) &nbsp;|&nbsp; [Phone](tel:+917498463025)
+**Connect:** [LinkedIn](https://www.linkedin.com/in/aditya-dev-pande/) &nbsp;|&nbsp; [GitHub](https://github.com/adi-Git-Hub) &nbsp;|&nbsp; [Email](mailto:aditya.dev.pande@gmail.com) &nbsp;|&nbsp; [Phone](tel:+917498463025)
 
 ---
 

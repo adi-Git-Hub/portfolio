@@ -19,7 +19,7 @@ import type { Lang } from "@/lib/i18n";
 
 const EMAIL = "aditya.dev.pande@gmail.com";
 const GITHUB_URL = "https://github.com/adi-Git-Hub";
-const LINKEDIN_URL = "https://www.linkedin.com/in/adityapande";
+const LINKEDIN_URL = "https://www.linkedin.com/in/aditya-dev-pande/";
 
 type Localised = { en: string; hi: string };
 
@@ -421,11 +421,11 @@ export default function Home() {
                       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_35%,rgba(122,166,208,0.22),transparent_70%)] pointer-events-none" />
 
                       <picture>
-                        <source srcSet="/aditya_transparent.webp" type="image/webp" />
+                        <source srcSet="/aditya_photo_45.jpg" type="image/jpeg" />
                         <img
-                          src="/aditya_transparent.png"
+                          src="/PHOTO-2026-10-14-15-43-32.jpg"
                           alt="Aditya Pande"
-                          className="w-full h-full object-contain object-bottom drop-shadow-[0_12px_28px_rgba(0,0,0,0.75)] transition-transform duration-500 group-hover:scale-[1.03]"
+                          className="w-full h-full object-cover object-[48%_40%] drop-shadow-[0_12px_28px_rgba(0,0,0,0.75)] transition-transform duration-500 group-hover:scale-[1.03]"
                           loading="eager"
                         />
                       </picture>
