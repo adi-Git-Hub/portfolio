@@ -1,18 +1,18 @@
 import {
-  siAxios,
   siDocker,
   siExpress,
-  siFirebase,
   siGit,
-  siJavascript,
+  siGithubactions,
+  siHelm,
+  siJenkins,
+  siKubernetes,
+  siLinux,
   siMongodb,
   siNextdotjs,
+  siNginx,
   siNodedotjs,
-  siOpenjdk,
-  siPostgresql,
-  siPython,
   siReact,
-  siTailwindcss,
+  siTerraform,
   siTypescript,
 } from "simple-icons";
 
@@ -23,20 +23,13 @@ export type SkillIcon = {
   hex: string;
 };
 
-// Aliased with clean professional display title
-const javaIcon: SkillIcon = {
-  ...siOpenjdk,
-  title: "Java",
-};
-
 // 3×5 grid — consumed by the 3D keyboard (one icon per keycap) and, on mobile,
-// by the flat list below for the static skills grid that replaces the
-// hover-driven keyboard interaction. Taglines live in the i18n dictionary
-// under `keyboard.taglines.<slug>`.
+// by the flat list for the static skills grid.
+// Strictly derived from Aditya Pande's Backend & DevOps stack:
 export const SKILLS_GRID: readonly (readonly SkillIcon[])[] = [
-  [siJavascript, siTypescript, siReact, siNextdotjs, siTailwindcss],
-  [siNodedotjs, siExpress, siPostgresql, siMongodb, siFirebase],
-  [javaIcon, siPython, siAxios, siGit, siDocker],
+  [siNodedotjs, siExpress, siMongodb, siReact, siNextdotjs],
+  [siDocker, siKubernetes, siLinux, siNginx, siTerraform],
+  [siJenkins, siHelm, siGithubactions, siGit, siTypescript],
 ] as const;
 
 export const SKILLS_FLAT: readonly SkillIcon[] = SKILLS_GRID.flat();

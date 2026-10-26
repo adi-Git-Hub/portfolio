@@ -44,15 +44,15 @@ export async function POST(request: Request) {
       console.error("[API] Failed to store inquiry to local disk:", fsErr);
     }
 
-    // 2. Dispatch to FormSubmit email notification service for urwashimalla@gmail.com
+    // 2. Dispatch to FormSubmit email notification service for aditya.dev.pande@gmail.com
     try {
-      await fetch("https://formsubmit.co/ajax/urwashimalla@gmail.com", {
+      await fetch("https://formsubmit.co/ajax/aditya.dev.pande@gmail.com", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
           Accept: "application/json",
-          Referer: "https://urwashimalla.com/",
-          Origin: "https://urwashimalla.com",
+          Referer: "https://adityapande.dev/",
+          Origin: "https://adityapande.dev",
         },
         body: JSON.stringify({
           _subject: `New Portfolio Inquiry [${purpose?.toUpperCase()}]: ${name}`,

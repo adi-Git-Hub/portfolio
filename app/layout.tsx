@@ -23,22 +23,22 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Urwashi Malla — System Architect & Full-Stack Engineer",
+  title: "Aditya Pande — Backend Developer | DevOps Engineer",
   description:
-    "Portfolio of Urwashi Malla — System Architect, Backend & Full-Stack Engineer. Interactive 3D mechanical keyboard experience built with Next.js, React Three Fiber, and Tailwind CSS.",
-  authors: [{ name: "Urwashi Malla" }],
+    "Portfolio of Aditya Pande — Backend Developer & DevOps Engineer. Interactive 3D mechanical keyboard experience built with Next.js, React Three Fiber, Docker, AWS, and Kubernetes.",
+  authors: [{ name: "Aditya Pande" }],
   openGraph: {
-    title: "Urwashi Malla — System Architect & Full-Stack Engineer",
+    title: "Aditya Pande — Backend Developer | DevOps Engineer",
     description:
-      "Interactive 3D developer portfolio showcasing full-stack systems, e-commerce architectures, and AI integrations.",
+      "Interactive 3D developer portfolio showcasing production e-commerce backends, Kubernetes microservices, AWS cloud infrastructure, and DevOps pipelines.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Urwashi Malla — System Architect & Full-Stack Engineer",
+    title: "Aditya Pande — Backend Developer | DevOps Engineer",
     description:
-      "Interactive 3D developer portfolio showcasing full-stack systems, e-commerce architectures, and AI integrations.",
+      "Interactive 3D developer portfolio showcasing production e-commerce backends, Kubernetes microservices, AWS cloud infrastructure, and DevOps pipelines.",
   },
 };
 

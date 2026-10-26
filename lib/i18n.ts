@@ -26,26 +26,26 @@ export const DICT = {
     aria: { en: "Sections", hi: "Sections" },
     home: { en: "Home", hi: "Home" },
     stack: { en: "Tech Stack", hi: "Tech Stack" },
-    experience: { en: "Experience & Leadership", hi: "Experience & Journey" },
+    experience: { en: "Experience", hi: "Experience" },
     education: { en: "Education & Certs", hi: "Education & Certs" },
-    project: { en: "Project", hi: "Projects" },
+    project: { en: "Projects", hi: "Projects" },
     contact: { en: "Contact", hi: "Connect Karein" },
   },
   header: {
     availability: {
-      en: "Open to opportunities",
-      hi: "Open for opportunities",
+      en: "Open to SDE / DevOps roles",
+      hi: "Open for SDE / DevOps roles",
     },
   },
   hero: {
     greeting: { en: "HELLO, I'M", hi: "HELLO, MAIN HOON" },
     roleLine: {
-      en: "System Architect & Backend Engineer",
-      hi: "System Architect & Backend Engineer",
+      en: "Backend Developer | DevOps Engineer",
+      hi: "Backend Developer | DevOps Engineer",
     },
     tagline: {
-      en: "Building scalable systems, robust APIs, and reliable backend infrastructure.",
-      hi: "Scalable systems, robust APIs aur reliable backend infrastructure build karti hoon.",
+      en: "Building reliable backend services, scalable architectures, and automated cloud deployments.",
+      hi: "Reliable backend services, scalable architectures aur automated cloud deployments build karta hoon.",
     },
     cv: { en: "Download Resume", hi: "Resume Download Karein" },
     hire: { en: "Get In Touch", hi: "Connect Karein" },
@@ -62,26 +62,26 @@ export const DICT = {
       hi: "(kisi bhi 3D key pe hover karke tech inspect karein)",
     },
     hintMobile: {
-      en: "Core technologies and tools I design and build with.",
-      hi: "Wo tools aur technologies jinke sath main systems build karti hoon.",
+      en: "Core backend, cloud, and DevOps technologies I work with daily.",
+      hi: "Core backend, cloud aur DevOps tools jinke sath main daily systems scale karta hoon.",
     },
   },
   experience: {
-    title: { en: "Experience & Leadership", hi: "Experience & Leadership" },
+    title: { en: "Professional Experience", hi: "Professional Experience" },
     subtitle: {
-      en: "Technical leadership, national hackathons, and systems engineering.",
-      hi: "Technical leadership, national hackathons aur systems engineering ka safar.",
+      en: "Production engineering, live cloud releases, and backend infrastructure.",
+      hi: "Production engineering, live cloud hosting aur backend APIs ka real-world work.",
     },
   },
   education: {
     title: { en: "Education & Certifications", hi: "Education & Certifications" },
     subtitle: {
-      en: "Academic foundation and verified technical certifications.",
-      hi: "Solid academic foundation aur verified technical certifications.",
+      en: "M.Tech & B.Tech degrees with verified AWS & DevOps credentials.",
+      hi: "M.Tech & B.Tech degrees aur verified AWS DevOps credentials.",
     },
     pursuing: { en: "In Progress", hi: "Currently Pursuing" },
     verified: { en: "Verified", hi: "Verified" },
-    sgpaLabel: { en: "Semester 4 SGPA", hi: "Semester 4 SGPA" },
+    sgpaLabel: { en: "Academic Status", hi: "Academic Status" },
   },
   projects: {
     kicker: { en: "project", hi: "project" },
@@ -96,8 +96,8 @@ export const DICT = {
     kicker: { en: "contact", hi: "get in touch" },
     title: { en: "Let's connect.", hi: "Chalo baat karte hain." },
     body: {
-      en: "Always open to discussing system architecture, backend engineering, or innovative full-stack opportunities.",
-      hi: "System architecture, backend engineering ya kisi exciting opportunity par discuss karne ke liye mera inbox hamesha open hai.",
+      en: "Open to discussing backend engineering, DevOps workflows, cloud architecture, and high-impact engineering roles.",
+      hi: "Backend development, DevOps roles, cloud architecture aur exciting opportunities par discuss karne ke liye inbox hamesha open hai.",
     },
     copyEmail: { en: "Copy Email", hi: "Email Copy Karein" },
     openMail: { en: "Send Email", hi: "Mail Bhejein" },
@@ -105,96 +105,106 @@ export const DICT = {
     linkedin: { en: "LinkedIn", hi: "LinkedIn" },
     emailToast: { en: "Email copied to clipboard", hi: "Email clipboard pe copy ho gaya!" },
     footer: {
-      en: "© 2026 Urwashi Malla. All rights reserved.",
-      hi: "© 2026 Urwashi Malla. All rights reserved.",
+      en: "© 2026 Aditya Pande. All rights reserved.",
+      hi: "© 2026 Aditya Pande. All rights reserved.",
     },
   },
   keyboard: {
     taglines: {
-      javascript: {
-        en: "Core language of the modern web and full-stack asynchronous systems.",
-        hi: "Modern web aur asynchronous full-stack systems ki backbone.",
-      },
-      typescript: {
-        en: "Type-safe scalability for robust frontend and backend engineering.",
-        hi: "Type-safety ke sath scalable frontend aur backend engineering.",
-      },
-      react: {
-        en: "Component-driven architecture for dynamic, performant user interfaces.",
-        hi: "Dynamic aur performant UI ke liye reactive component architecture.",
-      },
-      nextdotjs: {
-        en: "Production-grade React framework with SSR, routing, and edge execution.",
-        hi: "Production-grade React framework SSR aur edge performance ke sath.",
-      },
-      tailwindcss: {
-        en: "Utility-first design framework for modern, maintainable user interfaces.",
-        hi: "Modern aur maintainable interfaces ke liye utility-first styling.",
-      },
       nodedotjs: {
-        en: "High-throughput asynchronous runtime powering backend services and APIs.",
+        en: "High-throughput asynchronous runtime powering backend REST APIs and microservices.",
         hi: "Fast backend services aur APIs power karne wala asynchronous runtime.",
       },
       express: {
-        en: "Fast, unopinionated framework for architecting RESTful services.",
+        en: "Fast, unopinionated framework for architecting robust RESTful backend services.",
         hi: "Scalable REST APIs design karne ke liye lightweight backend framework.",
       },
-      postgresql: {
-        en: "Relational database engine with strict ACID compliance and structured queries.",
-        hi: "Rock-solid ACID compliance aur fast structured queries wali relational DB.",
-      },
       mongodb: {
-        en: "Flexible NoSQL document database for scalable, high-volume data storage.",
+        en: "Flexible NoSQL document database for scalable, high-volume application storage.",
         hi: "Flexible schemas aur high-scale storage ke liye NoSQL document DB.",
       },
-      firebase: {
-        en: "Cloud infrastructure for real-time data synchronization and rapid serverless deployment.",
-        hi: "Real-time data sync aur serverless cloud infrastructure.",
+      react: {
+        en: "Component-driven architecture for interactive, modern client-facing applications.",
+        hi: "Dynamic aur performant UI ke liye reactive component architecture.",
       },
-      openjdk: {
-        en: "Object-oriented foundation for robust algorithms, data structures, and core systems.",
-        hi: "Core algorithms, data structures aur heavy backend systems ki foundation.",
-      },
-      python: {
-        en: "Versatile language powering AI integrations, automation, and backend intelligence.",
-        hi: "AI integrations, smart automation aur intelligent backend logic.",
-      },
-      axios: {
-        en: "Promise-based HTTP client with interceptors for seamless frontend-to-API requests.",
-        hi: "Seamless frontend-to-backend API communication aur token interceptors.",
-      },
-      git: {
-        en: "Distributed version control for team workflows, code audits, and branch management.",
-        hi: "Team workflows aur safe code deployment ke liye version control.",
+      nextdotjs: {
+        en: "Production-grade React framework with SSR, API routing, and edge execution.",
+        hi: "Production-grade React framework SSR aur edge performance ke sath.",
       },
       docker: {
         en: "Containerization guaranteeing reproducible environments across development and production.",
-        hi: "Local machine se production tak identical environment containers.",
+        hi: "Local machine se cloud production tak identical environment containers.",
       },
-      html5: {
-        en: "Accessible semantic structure for modern web applications.",
-        hi: "Modern web applications ke liye semantic accessible structure.",
+      kubernetes: {
+        en: "Container orchestration automating deployments, service discovery, and rolling upgrades.",
+        hi: "Microservices deployments, self-healing aur scaling automate karne wala engine.",
       },
-      css: {
-        en: "Visual styling, responsive layouts, and smooth animations.",
-        hi: "Clean visuals, responsive layouts aur smooth animations.",
+      linux: {
+        en: "Core OS powering cloud servers, shell scripting, performance tuning, and security.",
+        hi: "Production cloud servers, automation scripting aur server operations ka standard.",
       },
-      github: {
-        en: "Cloud collaboration, code reviews, and automated deployment pipelines.",
-        hi: "Cloud collaboration, pull requests aur deployment workflows.",
+      nginx: {
+        en: "High-performance reverse proxy, load balancer, SSL/TLS termination, and HTTP caching.",
+        hi: "High-speed reverse proxy, SSL/TLS management aur load balancing server.",
+      },
+      terraform: {
+        en: "Infrastructure as Code (IaC) tool for provisioning predictable cloud environments.",
+        hi: "Declarative configuration se cloud infrastructure automate karne ka standard.",
+      },
+      jenkins: {
+        en: "Automation server driving continuous integration pipelines and automated release testing.",
+        hi: "Automated builds, automated test execution aur CI pipelines ka automation server.",
+      },
+      helm: {
+        en: "Kubernetes package manager standardizing manifest management and application releases.",
+        hi: "Kubernetes applications ke manifests aur releases manage karne ka package manager.",
+      },
+      githubactions: {
+        en: "Cloud CI/CD workflows automating build, test, container packaging, and production push.",
+        hi: "GitHub repository ke sath integrated modern CI/CD automation workflows.",
+      },
+      git: {
+        en: "Distributed version control for clean Git branching workflows, auditing, and collaboration.",
+        hi: "Team workflows aur safe code deployment ke liye industry standard version control.",
+      },
+      typescript: {
+        en: "Type-safe scalability preventing runtime regressions across backend and frontend code.",
+        hi: "Type-safety ke sath scalable frontend aur backend engineering.",
       },
     },
   },
-} as const satisfies Record<string, Node>;
+} as const;
 
-export function translate(path: string, lang: Lang): string {
+export function translate(path: string, lang: Lang = DEFAULT_LANG): string {
   const parts = path.split(".");
-  let ref: Node = DICT as unknown as Node;
+  let cur: unknown = DICT;
   for (const p of parts) {
-    if (isLeaf(ref)) return path;
-    ref = (ref as { [key: string]: Node })[p];
-    if (ref === undefined) return path;
+    if (!cur || typeof cur !== "object") return path;
+    cur = (cur as Record<string, unknown>)[p];
   }
-  if (isLeaf(ref)) return ref[lang] ?? ref.en ?? path;
+  if (!cur) return path;
+  if (typeof cur === "string") return cur;
+  if (typeof cur === "object") {
+    const leaf = cur as Record<string, string>;
+    return leaf[lang] ?? leaf.en ?? path;
+  }
   return path;
+}
+
+export function resolveDict(dict: typeof DICT, lang: Lang): Record<string, string> {
+  const result: Record<string, string> = {};
+
+  function traverse(node: Node, prefix: string) {
+    for (const [key, value] of Object.entries(node)) {
+      const nextKey = prefix ? `${prefix}.${key}` : key;
+      if (isLeaf(value as Node)) {
+        result[nextKey] = (value as Leaf)[lang] ?? (value as Leaf).en;
+      } else {
+        traverse(value as Node, nextKey);
+      }
+    }
+  }
+
+  traverse(dict as unknown as Node, "");
+  return result;
 }

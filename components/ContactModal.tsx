@@ -113,10 +113,10 @@ export default function ContactModal({
     const subjectPrefix =
       selectedPurpose === "hiring" ? "Hiring Opportunity" : "Connecting";
     const subject = encodeURIComponent(
-      `[${subjectPrefix}] ${trimmedName} - Connecting with Urwashi Malla`
+      `[${subjectPrefix}] ${trimmedName} - Connecting with Aditya Pande`
     );
     const bodyText = encodeURIComponent(
-      `Hi Urwashi,\n\nName: ${trimmedName}\nEmail: ${trimmedEmail}\nPurpose: ${
+      `Hi Aditya,\n\nName: ${trimmedName}\nEmail: ${trimmedEmail}\nPurpose: ${
         selectedPurpose === "hiring"
           ? "Hiring / Role Opportunity"
           : "General / Other Discussion"
@@ -145,7 +145,7 @@ export default function ContactModal({
       `[Project Inquiry] ${pName ? `${pName} - ` : ""}New Project Collaboration`
     );
     const bodyText = encodeURIComponent(
-      `Hi Urwashi,\n\nName: ${pName || "Not provided"}\nEmail: ${
+      `Hi Aditya,\n\nName: ${pName || "Not provided"}\nEmail: ${
         pEmail || "Not provided"
       }\nPurpose: Project Collaboration\n\nProject Scope / Overview:\n${
         pNote || "I would like to discuss and collaborate on a project."
@@ -161,10 +161,10 @@ export default function ContactModal({
 
   const handleSystemMailto = () => {
     const subject = encodeURIComponent(
-      `[Direct Inquiry] ${name ? `${name} - ` : ""}Urwashi Malla Portfolio`
+      `[Direct Inquiry] ${name ? `${name} - ` : ""}Aditya Pande Portfolio`
     );
     const body = encodeURIComponent(
-      `Hi Urwashi,\n\nName: ${name || ""}\nEmail: ${email || ""}\n`
+      `Hi Aditya,\n\nName: ${name || ""}\nEmail: ${email || ""}\n`
     );
     window.location.href = `mailto:${emailDestination}?subject=${subject}&body=${body}`;
   };
@@ -227,10 +227,10 @@ export default function ContactModal({
 
             <p className="text-sm sm:text-base text-ice-200/90 leading-relaxed max-w-md mx-auto mb-5">
               {lang === "hi"
-                ? `Aapki project inquiry receive ho chuki hai aur system me darj kar li gayi hai. Urwashi aapki requirements dekh kar ${
+                ? `Aapki project inquiry receive ho chuki hai aur system me darj kar li gayi hai. Aditya aapki requirements dekh kar ${
                     submittedData?.email || email || "aapke email"
-                  } par jald se jald reach out karengi.`
-                : `Your project inquiry has been recorded and delivered. Urwashi will review your requirements and reach out to ${
+                  } par jald se jald reach out karenge.`
+                : `Your project inquiry has been recorded and delivered. Aditya will review your requirements and reach out to ${
                     submittedData?.email || email || "your email"
                   } shortly.`}
             </p>
@@ -293,7 +293,7 @@ export default function ContactModal({
                 {lang === "hi" ? "DIRECT CONNECT" : "DIRECT CONNECT"}
               </p>
               <h3 className="text-2xl sm:text-3xl font-bold text-ice-50 tracking-tight">
-                {lang === "hi" ? "Urwashi se Connect Karein" : "Connect with Urwashi"}
+                {lang === "hi" ? "Aditya se Connect Karein" : "Connect with Aditya"}
               </h3>
               <p className="text-xs sm:text-sm text-ice-300 mt-1">
                 {lang === "hi"

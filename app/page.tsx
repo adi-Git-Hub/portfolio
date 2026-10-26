@@ -17,9 +17,9 @@ import { useIsMobile } from "@/lib/useIsMobile";
 import { SKILLS_FLAT } from "@/lib/skills";
 import type { Lang } from "@/lib/i18n";
 
-const EMAIL = "urwashimalla@gmail.com";
-const GITHUB_URL = "https://github.com/UrwashiMalla";
-const LINKEDIN_URL = "https://www.linkedin.com/in/urwashi-malla-63b499403/";
+const EMAIL = "aditya.dev.pande@gmail.com";
+const GITHUB_URL = "https://github.com/adi-Git-Hub";
+const LINKEDIN_URL = "https://www.linkedin.com/in/adityapande";
 
 type Localised = { en: string; hi: string };
 
@@ -32,24 +32,27 @@ const projects: Project[] = [
   {
     num: "01",
     name: {
-      en: "SolivaGuard — E-Commerce Platform",
-      hi: "SolivaGuard — E-Commerce Platform",
+      en: "SolivaGuard — Production E-Commerce Platform & Admin Dashboard",
+      hi: "SolivaGuard — Production E-Commerce Platform & Admin Dashboard",
     },
     stack: [
       "React",
-      "JavaScript",
-      "Tailwind CSS",
-      "REST APIs",
-      "Docker",
       "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Razorpay",
+      "Docker",
+      "AWS",
+      "Nginx",
+      "GitHub Actions",
     ],
     desc: {
-      en: "Production e-commerce platform for UV-protective apparel featuring responsive product discovery, secure checkout workflows, and modular UI architecture.",
-      hi: "UV-protective activewear ke liye production e-commerce platform, responsive product discovery aur secure checkout workflows ke sath.",
+      en: "Live production e-commerce platform combining customer storefront with administrative operations dashboard, Razorpay payments, and containerized AWS cloud infrastructure.",
+      hi: "Live commercial e-commerce platform jisme storefront, admin dashboard, Razorpay payment gateway aur containerized AWS cloud hosting integrated hai.",
     },
     details: {
-      en: "SolivaGuard is a full-scale commercial e-commerce solution. Focused on storefront architecture and user experience, implementing modular, reusable React UI components across desktop and mobile screens. Integrated with backend REST endpoints, optimized product browsing performance, and supported containerized deployment configurations with Docker and Nginx.",
-      hi: "SolivaGuard ek high-performance e-commerce platform hai. Maine iska customer-facing storefront React se architect kiya, reusable modular UI components banaye aur backend REST endpoints ke sath integrate kiya. Docker aur Nginx ke deployment containers configure karne me contribute kiya.",
+      en: "Built and currently maintain a live e-commerce platform combining a customer storefront with an administrative dashboard for commerce and operational workflows. Built backend functionality for authentication, database-driven product/order workflows, and Razorpay payment integration to support the end-to-end shopping experience. Deployed the production stack using Docker, AWS, Linux, Nginx, SSL/TLS, and deployment workflows; continue to troubleshoot live issues and optimize releases and infrastructure.",
+      hi: "Production e-commerce platform built aur maintain kiya jisme customer storefront aur operations admin dashboard shamil hain. Authentication, product/order workflows aur Razorpay payment integration ka complete backend develop kiya. Docker, AWS, Linux, Nginx aur SSL/TLS ke sath production stack deploy kiya aur live maintenance manage kiya.",
     },
     url: "https://solivaguard.com",
     media: [
@@ -60,102 +63,99 @@ const projects: Project[] = [
       "/projects/solivaguard/logo.webp",
       "/projects/solivaguard/nav.webp",
     ],
-    highlights: ["react", "javascript", "tailwindcss", "docker", "nodedotjs"],
+    highlights: ["react", "nodedotjs", "express", "mongodb", "docker", "nginx"],
     align: "left",
     section: "project1",
   },
   {
     num: "02",
     name: {
-      en: "Authentication & Security System",
-      hi: "Authentication & Security System",
+      en: "Multi-Tier Kubernetes Deployment — DevOps Project",
+      hi: "Multi-Tier Kubernetes Deployment — DevOps Project",
     },
     stack: [
-      "Node.js",
-      "Express.js",
-      "PostgreSQL",
-      "JWT",
-      "Bcrypt",
-      "React",
-      "Axios",
+      "Kubernetes",
+      "Docker",
+      "AWS EKS",
+      "Helm",
+      "Jenkins",
+      "GitHub Actions",
+      "Microservices",
     ],
     desc: {
-      en: "Full-stack authentication and session management engine featuring JWT tokens, email OTP verification, bcrypt password hashing, and PostgreSQL persistence.",
-      hi: "JWT access tokens, email OTP verification, bcrypt password hashing aur PostgreSQL storage ke sath full-stack auth engine.",
+      en: "Containerized multi-tier Robot Shop microservices application deployed on Kubernetes with automated CI/CD pipelines, Helm manifests, and ingress routing.",
+      hi: "Kubernetes par deployed multi-tier Robot Shop microservices architecture, automated CI/CD pipelines, Helm charts aur Ingress routing ke sath.",
     },
     details: {
-      en: "Engineered a production-ready authentication subsystem covering user registration, authenticated session lifecycles, and password recovery. The Express backend handles JWT signing/verification, bcrypt salt hashing, automated email OTP delivery via Nodemailer, and structured audit persistence in PostgreSQL. Frontend integrates client-side protected route guards with React Router and Axios interceptors.",
-      hi: "Production-ready authentication subsystem jisme user registration, login, email OTP verification aur password recovery shamil hai. Express backend JWT signing, bcrypt password hashing aur PostgreSQL persistence handle karta hai. React frontend Axios interceptors ke sath protected routes ensure karta hai.",
+      en: "Deployed a containerized multi-tier Robot Shop microservices application on Kubernetes, configuring Deployments, Services, Ingress, and supporting service components. Worked with Kubernetes manifests, Helm-based deployment configuration, and CI/CD workflows to make application rollout more repeatable across environments. Applied cloud-native operational patterns including service discovery, load balancing, health checks, and rolling deployment practices.",
+      hi: "Kubernetes par containerized Robot Shop microservices application deploy kiya, jisme Deployments, Services, Ingress aur Helm charts configure kiye. CI/CD automation ke sath repeatable deployments ensure kiye aur service discovery, load balancing, health checks aur rolling updates implement kiye.",
     },
-    github: "https://github.com/adi-Git-Hub/Authentication-Login-System",
+    github: "https://github.com/adi-Git-Hub",
     media: [
       "/projects/auth/dashboard.png",
       "/projects/auth/login.png",
     ],
-    highlights: ["nodedotjs", "express", "postgresql", "react", "axios"],
+    highlights: ["kubernetes", "docker", "helm", "jenkins", "githubactions"],
     align: "right",
     section: "project2",
   },
   {
     num: "03",
     name: {
-      en: "Talent Track — AI Placement Platform",
-      hi: "Talent Track — AI Placement Platform",
+      en: "Kinetic Care Gym — Client Landing Page",
+      hi: "Kinetic Care Gym — Client Landing Page",
     },
     stack: [
-      "React",
-      "Node.js",
-      "Express",
-      "AI Resume Scoring",
-      "PostgreSQL",
-      "REST APIs",
+      "Mobile-First Design",
+      "Responsive Frontend",
+      "Campaign Landing Page",
+      "WhatsApp Enquiry Flow",
+      "Vercel",
     ],
     desc: {
-      en: "AI-driven placement platform built for students, recruiters, and college placement cells, featuring resume scoring, skill-gap analysis, and mock tests.",
-      hi: "Students aur recruiters ke liye AI placement platform, jisme automated resume scoring, skill-gap analysis aur mock tests integrated hain.",
+      en: "Mobile-first promotional landing page for a gym client, optimizing visitor onboarding directly into WhatsApp booking and membership enquiries.",
+      hi: "Gym client ke liye mobile-first promotional landing page, jisme focused visitor journey direct WhatsApp enquiry conversion ke liye design kiya gaya hai.",
     },
     details: {
-      en: "Developed as team leader for TechnoSphere at the National-Level Rackathon 2026. The platform streamlines campus recruitment through AI-assisted workflows: automated resume evaluation against job descriptions, diagnostic skill-gap reports, interactive mock technical evaluations, and administrative oversight dashboards for placement officers.",
-      hi: "National-Level Rackathon 2026 me Team TechnoSphere ke leader ke roop me develop kiya gaya platform. Ye college recruitment process ko AI workflows se simplify karta hai: automated resume evaluation, skill-gap identification aur placement dashboards.",
+      en: "Designed a mobile-first promotional page for a gym client, organizing core offerings and visitor information into a focused, easy-to-scan landing experience. Structured the visitor journey from campaign landing page to WhatsApp enquiry, giving prospective members a direct route to contact the business. Deployed and monitored on Vercel.",
+      hi: "Client ke liye mobile-first landing experience design kiya jo core fitness offerings ko clear visual structure deta hai aur visitors ko direct WhatsApp enquiry ke zariye membership book karne me madad karta hai. Vercel par fast deployment kiya.",
     },
-    badge: { en: "Rackathon 2026", hi: "Rackathon 2026" },
+    badge: { en: "Client Project", hi: "Client Project" },
     media: [
       "/projects/talent-track/dashboard.png",
       "/projects/talent-track/analysis.png",
     ],
-    highlights: ["react", "nodedotjs", "postgresql", "javascript", "python"],
+    highlights: ["react", "nextdotjs", "tailwindcss"],
     align: "left",
     section: "project3",
   },
   {
     num: "04",
     name: {
-      en: "Amravati Sahayak — AI Local Assistant",
-      hi: "Amravati Sahayak — AI Local Assistant",
+      en: "Jainism Cake & Cafe — Client Website",
+      hi: "Jainism Cake & Cafe — Client Website",
     },
     stack: [
-      "JavaScript",
-      "Gemini AI",
-      "Firebase",
-      "HTML5",
-      "CSS3",
-      "REST APIs",
+      "Responsive Frontend",
+      "Menu Presentation",
+      "Product Showcase",
+      "Customer Enquiry UX",
+      "Vercel",
     ],
     desc: {
-      en: "Conversational AI assistant empowering citizens and travelers with instant access to hospitals, emergency amenities, and local business information.",
-      hi: "Amravati ke citizens aur travelers ke liye conversational AI assistant, hospitals aur essential services ki instant local jankari ke sath.",
+      en: "Customer-facing cafe & bakery website presenting menu highlights, specialty cake collections, booking prompts, and location discovery.",
+      hi: "Bakery aur cafe client ke liye customer-facing website, menu highlights, cake collections aur direct booking calls-to-action ke sath.",
     },
     details: {
-      en: "Independently conceptualized and demonstrated at the Amravati AI Summit 2026. Features a responsive chat UI communicating with generative AI endpoints to answer location-specific inquiries for healthcare, dining, and city amenities with multilingual conversational capabilities across English, Hindi, and Marathi.",
-      hi: "Amravati AI Summit 2026 me independently present kiya gaya conversational assistant. Generative AI aur Firebase real-time database use karke Hindi, Marathi aur English me local public services ki accurate information deta hai.",
+      en: "Developed a customer-facing café and bakery website presenting menu highlights, featured cakes, booking prompts, location, and contact information. Organized prominent calls to action for menu discovery, cake browsing, bookings, and customer contact, then published the frontend on Vercel.",
+      hi: "Customer-facing café aur bakery website develop kiya jisme interactive menu presentation, featured cakes showcase, location jankari aur easy booking prompts shamil hain. Vercel par deploy karke seamless performance provide kiya.",
     },
-    url: "https://amravati-sahayak.vercel.app/chat.html",
-    badge: { en: "Amravati AI Summit 2026", hi: "Amravati AI Summit 2026" },
+    badge: { en: "Live Client Site", hi: "Live Client Site" },
     media: [
       "/projects/sahayak/chat.png",
       "/projects/sahayak/search.png",
     ],
-    highlights: ["javascript", "firebase", "axios"],
+    highlights: ["react", "javascript", "tailwindcss"],
     align: "right",
     section: "project4",
   },
@@ -172,114 +172,132 @@ const experiences: Array<{
 }> = [
   {
     role: {
-      en: "Team Leader & Full-Stack Developer",
-      hi: "Team Leader & Full-Stack Developer",
+      en: "Software Engineer",
+      hi: "Software Engineer",
     },
-    company: "TechnoSphere · National-Level Rackathon 2026",
-    period: { en: "2026", hi: "2026" },
-    location: { en: "Amravati, India", hi: "Amravati, India" },
+    company: "Production Web Application",
+    period: { en: "Jan 2025 — Present", hi: "Jan 2025 — Present" },
+    location: { en: "Production", hi: "Production" },
     summary: {
-      en: "Led the TechnoSphere engineering team in designing and building the Talent Track platform to streamline university campus placements between students, recruiters, and placement directors.",
-      hi: "TechnoSphere engineering team ko lead kiya Talent Track platform build karne ke liye, taaki campus placements aur technical evaluation process streamlined ho sake.",
+      en: "Owned delivery of a production web application from requirements and scope through backend implementation, deployment, and ongoing maintenance.",
+      hi: "Requirements aur scope se lekar backend implementation, deployment aur ongoing maintenance tak production web application deliver kiya.",
     },
     bullets: [
       {
-        en: "Architected placement-readiness workflows: automated resume evaluation against industry benchmarks and diagnostic skill-gap identification.",
-        hi: "Placement-readiness workflows architect kiye: automated resume evaluation aur skill-gap identification.",
+        en: "Implemented backend modules for authentication, payment integration (Razorpay), order and administrative workflows, and database operations.",
+        hi: "Authentication, Razorpay payment integration, order aur admin workflows ke robust backend modules implement kiye.",
       },
       {
-        en: "Engineered frontend React interfaces connected to Node.js/Express REST endpoints for secure multi-role dashboard access.",
-        hi: "React UI ko Node.js/Express REST APIs ke sath connect karke multi-role dashboards develop kiye.",
+        en: "Managed production hosting and releases across AWS, Docker, Linux, Nginx, SSL/TLS, and DNS; diagnosed issues and delivered incremental improvements.",
+        hi: "AWS, Docker, Linux, Nginx, SSL/TLS aur DNS par production hosting aur releases manage kiye aur performance diagnose kiya.",
       },
       {
-        en: "Formulated technical architecture and defended system design before the national-level jury panel.",
-        hi: "System architecture design formulate kiya aur national jury ke samne live defend kiya.",
+        en: "Coordinated requirements, project scope, estimates, and progress updates with stakeholders to support reliable delivery.",
+        hi: "Stakeholders ke sath requirements, scope aur progress coordinate karke reliable software delivery ensure kiya.",
       },
     ],
-    stack: ["React", "Node.js", "Express.js", "PostgreSQL", "REST APIs", "Git"],
+    stack: [
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "AWS",
+      "Docker",
+      "Linux",
+      "Nginx",
+      "SSL/TLS",
+      "Razorpay",
+    ],
   },
   {
     role: {
-      en: "AI Solutions Developer & Presenter",
-      hi: "AI Solutions Developer & Presenter",
+      en: "Backend & DevOps Intern",
+      hi: "Backend & DevOps Intern",
     },
-    company: "Amravati AI Summit 2026",
-    period: { en: "2026", hi: "2026" },
-    location: { en: "Amravati, India", hi: "Amravati, India" },
-    summary: {
-      en: "Independently conceptualized, engineered, and demonstrated Amravati Sahayak, a multilingual AI civic assistant for emergency and municipal discovery.",
-      hi: "Amravati Sahayak conversational assistant ko independently build kiya aur Amravati AI Summit me showcase kiya.",
-    },
-    bullets: [
-      {
-        en: "Designed conversational user experience with multilingual natural interaction in Hindi, Marathi, and English for broad civic accessibility.",
-        hi: "Hindi, Marathi aur English me multilingual conversational UI design kiya.",
-      },
-      {
-        en: "Integrated generative AI endpoints with Firebase real-time database for rapid contextual responses on hospitals and local services.",
-        hi: "Generative AI aur Firebase real-time data sync integrate kiya low-latency responses ke liye.",
-      },
-      {
-        en: "Delivered live technical demonstration and architecture walkthrough to industry leaders and engineers at the summit.",
-        hi: "Summit me industry experts aur engineers ke samne live technical demo deliver kiya.",
-      },
-    ],
-    stack: ["JavaScript", "Gemini AI", "Firebase", "REST APIs", "HTML5", "CSS3"],
-  },
-  {
-    role: {
-      en: "Frontend & Storefront Contributor",
-      hi: "Frontend & Storefront Contributor",
-    },
-    company: "SolivaGuard Project",
-    period: { en: "2025 — 2026", hi: "2025 — 2026" },
+    company: "SyncSaS Technologies",
+    period: { en: "Dec 2024 — Jun 2025", hi: "Dec 2024 — Jun 2025" },
     location: { en: "Remote", hi: "Remote" },
     summary: {
-      en: "Contributed to the customer-facing storefront of SolivaGuard, establishing responsive page architecture and fluid shopping user flows.",
-      hi: "SolivaGuard production e-commerce platform ke storefront UI aur responsive shopping flows me contribute kiya.",
+      en: "Developed backend services and REST APIs using Node.js, Express.js, and MongoDB with modular, maintainable application code.",
+      hi: "Node.js, Express.js aur MongoDB ke sath modular backend REST APIs aur scalable services develop kiye.",
     },
     bullets: [
       {
-        en: "Developed responsive page layouts and reusable React UI component systems maintaining visual fidelity across mobile and desktop viewports.",
-        hi: "Mobile aur desktop ke liye modular React UI components aur responsive layouts create kiye.",
+        en: "Used Docker, AWS, Linux, and Nginx to deploy, configure, and maintain cloud-hosted application environments.",
+        hi: "Cloud environments ko deploy, configure aur maintain karne ke liye Docker, AWS, Linux aur Nginx ka use kiya.",
       },
       {
-        en: "Streamlined product catalog discovery, variant inspection, and customer shopping navigation performance.",
-        hi: "Product catalog browsing, item discovery aur shopping navigation performance optimize kiya.",
+        en: "Implemented CI/CD workflows with GitHub Actions and Jenkins to automate application builds and deployments.",
+        hi: "GitHub Actions aur Jenkins ke sath automated build aur deployment CI/CD workflows implement kiye.",
       },
       {
-        en: "Collaborated on containerized deployment readiness using Docker and production-level service configurations.",
-        hi: "Docker containers aur production service deployment configurations me actively collaborate kiya.",
+        en: "Supported production debugging, infrastructure optimization, and deployment lifecycle management in collaboration with engineering teams.",
+        hi: "Production debugging, infrastructure optimization aur deployment lifecycle management me active contribution diya.",
       },
     ],
-    stack: ["React", "JavaScript", "Tailwind CSS", "Docker", "REST APIs"],
+    stack: [
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Docker",
+      "AWS",
+      "Linux",
+      "Nginx",
+      "GitHub Actions",
+      "Jenkins",
+    ],
   },
 ];
 
 const educationItems = [
   {
     degree: {
-      en: "B.Tech in Information Technology",
-      hi: "B.Tech in Information Technology",
+      en: "M.Tech in Computer Science and Engineering",
+      hi: "M.Tech in Computer Science and Engineering",
     },
     status: {
-      en: "Pursuing · Expected 2027",
-      hi: "Currently Pursuing · 2027 Expected",
+      en: "Pursuing",
+      hi: "Currently Pursuing",
     },
-    institution: "H.V.P.M. College of Engineering and Technology",
-    university: "Sant Gadge Baba Amravati University (SGBAU)",
+    institution: "G. H. Raisoni College of Engineering and Management",
+    university: "Computer Science and Engineering",
     metrics: {
-      label: { en: "Semester 4 SGPA", hi: "Semester 4 SGPA" },
-      val: "9.18 / 10",
+      label: { en: "Status", hi: "Status" },
+      val: "Active",
     },
     highlights: [
       {
-        en: "Core focus on web development, software architectures, and data structures.",
-        hi: "Backend architectures, data structures aur web systems development pe main focus.",
+        en: "Specializing in distributed systems, backend architectures, and cloud infrastructure.",
+        hi: "Distributed systems, backend architectures aur cloud infrastructure me specialization.",
       },
       {
-        en: "Active participant in tech innovation competitions, ideathons, and university hackathons.",
-        hi: "Hackathons, technical competitions aur state-level ideathons me active participation.",
+        en: "Focus on automated DevOps pipelines, containerized deployments, and microservices reliability.",
+        hi: "Automated DevOps pipelines, containerized deployments aur microservices engineering pe focus.",
+      },
+    ],
+  },
+  {
+    degree: {
+      en: "Bachelor of Technology (Artificial Intelligence)",
+      hi: "Bachelor of Technology (Artificial Intelligence)",
+    },
+    status: {
+      en: "2022 — 2026",
+      hi: "2022 — 2026",
+    },
+    institution: "G. H. Raisoni College of Engineering and Management",
+    university: "Artificial Intelligence Department",
+    metrics: {
+      label: { en: "Graduation", hi: "Graduation" },
+      val: "2026",
+    },
+    highlights: [
+      {
+        en: "Core foundation in algorithms, system programming, AI architectures, and database design.",
+        hi: "Algorithms, system programming, AI architectures aur database design ki strong foundation.",
+      },
+      {
+        en: "Hands-on experience delivering end-to-end commercial web applications and cloud deployments.",
+        hi: "Full-stack web applications aur cloud deployments deliver karne ka practical hands-on experience.",
       },
     ],
   },
@@ -287,24 +305,34 @@ const educationItems = [
 
 const certificationItems = [
   {
-    title: "Data Structures and Algorithms with Java",
-    issuer: "Apna College",
+    title: "AWS Cloud Practitioner Essentials",
+    issuer: "Amazon Web Services (AWS)",
     verified: true,
     desc: {
-      en: "Mastery of core data structures, asymptotic algorithmic complexity, and object-oriented systems design.",
-      hi: "Core data structures, algorithm optimization aur object-oriented system design.",
+      en: "Comprehensive knowledge of AWS core services, cloud security, architecture, pricing, and infrastructure operations.",
+      hi: "AWS core services, cloud security, cloud architecture aur pricing models ki comprehensive practical knowledge.",
     },
-    badge: "Java / DSA",
+    badge: "AWS Cloud",
   },
   {
-    title: "Full Stack Web Development",
-    issuer: "Apna College",
+    title: "AWS Certified DevOps Engineer – Professional (Exam Prep)",
+    issuer: "Amazon Web Services (AWS)",
     verified: true,
     desc: {
-      en: "End-to-end full-stack web applications, client-server architectures, and relational & NoSQL databases.",
-      hi: "Complete full-stack web applications, client-server architectures aur SQL/NoSQL databases.",
+      en: "Advanced preparation covering continuous delivery, automation, security controls, monitoring, and high-availability systems.",
+      hi: "Continuous delivery, infrastructure automation, security controls aur high-availability systems design.",
     },
-    badge: "Full-Stack Web",
+    badge: "AWS DevOps Pro",
+  },
+  {
+    title: "AWS Certified DevOps Engineer – Professional (Domain Reviews)",
+    issuer: "Amazon Web Services (AWS)",
+    verified: true,
+    desc: {
+      en: "Deep-dive mastery across SDLC automation, configuration management, infrastructure as code, and incident response.",
+      hi: "SDLC automation, configuration management, IaC aur incident response me deep-dive mastery.",
+    },
+    badge: "DevOps Domains",
   },
 ];
 
@@ -335,7 +363,7 @@ export default function Home() {
               data-cursor="hover"
               className="text-sm font-semibold tracking-tight text-ice-100 whitespace-nowrap"
             >
-              &lt;Urwashi /&gt;
+              &lt;Aditya /&gt;
             </span>
             <span className="hidden md:inline-flex">
               <span className="status-pill">{t("header.availability")}</span>
@@ -393,10 +421,10 @@ export default function Home() {
                       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_35%,rgba(122,166,208,0.22),transparent_70%)] pointer-events-none" />
 
                       <picture>
-                        <source srcSet="/urwashi_transparent.webp" type="image/webp" />
+                        <source srcSet="/aditya_transparent.webp" type="image/webp" />
                         <img
-                          src="/urwashi_transparent.png"
-                          alt="Urwashi Malla"
+                          src="/aditya_transparent.png"
+                          alt="Aditya Pande"
                           className="w-full h-full object-contain object-bottom drop-shadow-[0_12px_28px_rgba(0,0,0,0.75)] transition-transform duration-500 group-hover:scale-[1.03]"
                           loading="eager"
                         />
@@ -406,7 +434,7 @@ export default function Home() {
                       <div className="absolute bottom-2.5 inset-x-2.5 flex items-center justify-between px-2.5 py-1 rounded-xl border border-ice-700/80 bg-ink-1/85 backdrop-blur-md text-[11px] font-mono text-ice-100 shadow-lg">
                         <span className="flex items-center gap-1.5">
                           <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-                          Urwashi Malla
+                          Aditya Pande
                         </span>
                         <span className="text-ice-400 text-[10px]">Active</span>
                       </div>
@@ -429,7 +457,7 @@ export default function Home() {
                     className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-[-0.03em] text-ice-50 leading-[0.98] mb-4 fade-in-up"
                     style={{ ["--d" as string]: "150ms" }}
                   >
-                    Urwashi <span className="text-ice-400 font-black">Malla</span>
+                    Aditya <span className="text-ice-400 font-black">Pande</span>
                   </h1>
 
                   {/* Role Title */}
@@ -437,7 +465,7 @@ export default function Home() {
                     className="text-xl sm:text-2xl md:text-3xl font-semibold text-ice-100 tracking-tight mb-3 fade-in-up"
                     style={{ ["--d" as string]: "280ms" }}
                   >
-                    System Architect &amp; Backend Engineer
+                    Backend Developer | DevOps Engineer
                   </h2>
 
                   {/* Description */}
@@ -445,22 +473,22 @@ export default function Home() {
                     className="text-base sm:text-lg text-ice-200/90 leading-relaxed max-w-lg mb-6 fade-in-up"
                     style={{ ["--d" as string]: "380ms" }}
                   >
-                    Building scalable systems, robust APIs, and reliable backend infrastructure.
+                    Building reliable backend services, scalable architectures, and automated cloud deployments.
                   </p>
 
-                  {/* Verified Quick Badges */}
+                  {/* Verified Quick Badges from Resume */}
                   <div
                     className="mt-6 flex flex-wrap gap-2.5 pointer-events-auto fade-in-up"
                     style={{ ["--d" as string]: "500ms" }}
                   >
                     <span className="font-mono text-xs px-3 py-1 rounded-full border border-ice-700/60 bg-ink-2/70 text-ice-200">
-                      ⚡ 9.18 SGPA
+                      ⚡ M.Tech CSE · B.Tech AI
                     </span>
                     <span className="font-mono text-xs px-3 py-1 rounded-full border border-ice-700/60 bg-ink-2/70 text-ice-200">
-                      🏆 Rackathon &apos;26 Lead
+                      🚀 SolivaGuard Production Stack
                     </span>
                     <span className="font-mono text-xs px-3 py-1 rounded-full border border-ice-700/60 bg-ink-2/70 text-ice-200">
-                      🤖 AI Summit Presenter
+                      ☁️ AWS, Kubernetes &amp; DevOps
                     </span>
                   </div>
 
@@ -793,49 +821,51 @@ export default function Home() {
             </div>
 
             <div className="relative z-10 max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-              {/* Degree Card */}
-              {educationItems.map((edu, idx) => (
-                <Reveal
-                  key={idx}
-                  delay={idx * 100}
-                  as="article"
-                  className="rounded-2xl bg-ink-1/75 backdrop-blur-md border border-ink-3 p-6 sm:p-8 pointer-events-auto flex flex-col justify-between"
-                >
-                  <div>
-                    <div className="flex items-center justify-between gap-2 mb-3">
-                      <span className="font-mono text-[11px] uppercase tracking-wider text-ice-400">
-                        {pick(edu.status, lang)}
-                      </span>
-                      <span className="font-mono text-xs text-ice-100 px-2.5 py-0.5 rounded-full border border-ice-700/60 bg-ink-2/60">
-                        SGPA: {edu.metrics.val}
-                      </span>
+              {/* Degrees Column */}
+              <div className="space-y-6">
+                {educationItems.map((edu, idx) => (
+                  <Reveal
+                    key={idx}
+                    delay={idx * 100}
+                    as="article"
+                    className="rounded-2xl bg-ink-1/75 backdrop-blur-md border border-ink-3 p-6 sm:p-8 pointer-events-auto flex flex-col justify-between"
+                  >
+                    <div>
+                      <div className="flex items-center justify-between gap-2 mb-3">
+                        <span className="font-mono text-[11px] uppercase tracking-wider text-ice-400">
+                          {pick(edu.status, lang)}
+                        </span>
+                        <span className="font-mono text-xs text-ice-100 px-2.5 py-0.5 rounded-full border border-ice-700/60 bg-ink-2/60">
+                          {edu.metrics.val}
+                        </span>
+                      </div>
+                      <h3 className="text-xl sm:text-2xl font-bold text-ice-50 tracking-tight mb-2">
+                        {pick(edu.degree, lang)}
+                      </h3>
+                      <p className="text-ice-300 font-medium text-sm mb-1">
+                        {edu.institution}
+                      </p>
+                      <p className="text-ice-400 text-xs mb-5">
+                        {edu.university}
+                      </p>
+                      <ul className="space-y-2 mb-4">
+                        {edu.highlights.map((h, i) => (
+                          <li key={i} className="flex gap-2.5 text-xs text-ice-200 leading-relaxed">
+                            <span className="mt-[0.55em] flex-none w-1.5 h-1.5 rounded-full bg-ice-400" />
+                            <span>{pick(h, lang)}</span>
+                          </li>
+                        ))}
+                      </ul>
                     </div>
-                    <h3 className="text-2xl font-bold text-ice-50 tracking-tight mb-2">
-                      {pick(edu.degree, lang)}
-                    </h3>
-                    <p className="text-ice-300 font-medium text-sm mb-1">
-                      {edu.institution}
-                    </p>
-                    <p className="text-ice-400 text-xs mb-5">
-                      {edu.university}
-                    </p>
-                    <ul className="space-y-2 mb-6">
-                      {edu.highlights.map((h, i) => (
-                        <li key={i} className="flex gap-2.5 text-xs text-ice-200 leading-relaxed">
-                          <span className="mt-[0.55em] flex-none w-1.5 h-1.5 rounded-full bg-ice-400" />
-                          <span>{pick(h, lang)}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div className="pt-4 border-t border-ink-3/60 flex items-center justify-between">
-                    <span className="text-xs text-ice-400 font-mono">Academic Status</span>
-                    <span className="text-xs text-emerald-400 font-medium">Verified Active</span>
-                  </div>
-                </Reveal>
-              ))}
+                    <div className="pt-3 border-t border-ink-3/60 flex items-center justify-between">
+                      <span className="text-xs text-ice-400 font-mono">Academic Status</span>
+                      <span className="text-xs text-emerald-400 font-medium">Verified Active</span>
+                    </div>
+                  </Reveal>
+                ))}
+              </div>
 
-              {/* Certifications Card */}
+              {/* Certifications Column */}
               <div className="space-y-4">
                 {certificationItems.map((c, i) => (
                   <Reveal
@@ -864,29 +894,18 @@ export default function Home() {
                   </Reveal>
                 ))}
 
-                {/* Hackathon & Summit Accolades */}
+                {/* Core Skills Summary Card */}
                 <Reveal
                   delay={360}
                   as="div"
                   className="rounded-2xl bg-ink-1/75 backdrop-blur-md border border-ink-3 p-6 pointer-events-auto"
                 >
                   <h4 className="text-sm font-semibold uppercase tracking-wider text-ice-300 mb-3">
-                    Hackathons & Key Accolades
+                    Core Technical Domains
                   </h4>
-                  <ul className="space-y-2 text-xs text-ice-200">
-                    <li className="flex items-start gap-2">
-                      <span className="text-amber-400">★</span>
-                      <span>Team Leader for <strong>TechnoSphere</strong> at National-Level Rackathon 2026</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-cyan-400">★</span>
-                      <span>Presenter at <strong>Amravati AI Summit 2026</strong> (Amravati Sahayak)</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-purple-400">★</span>
-                      <span>Participant in Business-Plan Competitions & Regional Ideathons</span>
-                    </li>
-                  </ul>
+                  <p className="text-xs text-ice-200 leading-relaxed">
+                    Backend Development • DevOps • AWS • Docker • Kubernetes • CI/CD • Linux • Infrastructure Automation • Cloud Computing
+                  </p>
                 </Reveal>
               </div>
             </div>
