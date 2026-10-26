@@ -16,6 +16,7 @@ import { useLanguage } from "@/components/LanguageProvider";
 import { useIsMobile } from "@/lib/useIsMobile";
 import { SKILLS_FLAT } from "@/lib/skills";
 import type { Lang } from "@/lib/i18n";
+import { asset } from "@/lib/asset";
 
 const EMAIL = "aditya.dev.pande@gmail.com";
 const GITHUB_URL = "https://github.com/adi-Git-Hub";
@@ -28,7 +29,7 @@ type Project = ProjectDetail & {
   section: "project1" | "project2" | "project3" | "project4";
 };
 
-const projects: Project[] = [
+const projects: Project[] = ([
   {
     num: "01",
     name: {
@@ -159,7 +160,10 @@ const projects: Project[] = [
     align: "right",
     section: "project4",
   },
-];
+] satisfies Project[]).map((p): Project => ({
+  ...p,
+  media: p.media.map(asset),
+}));
 
 const experiences: Array<{
   role: Localised;
@@ -421,9 +425,9 @@ export default function Home() {
                       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_35%,rgba(122,166,208,0.22),transparent_70%)] pointer-events-none" />
 
                       <picture>
-                        <source srcSet="/aditya_photo_45.jpg" type="image/jpeg" />
+                        <source srcSet={asset("/aditya_photo_45.jpg")} type="image/jpeg" />
                         <img
-                          src="/PHOTO-2026-10-14-15-43-32.jpg"
+                          src={asset("/PHOTO-2026-10-14-15-43-32.jpg")}
                           alt="Aditya Pande"
                           className="w-full h-full object-cover object-[48%_40%] drop-shadow-[0_12px_28px_rgba(0,0,0,0.75)] transition-transform duration-500 group-hover:scale-[1.03]"
                           loading="eager"
@@ -498,7 +502,7 @@ export default function Home() {
                     style={{ ["--d" as string]: "650ms" }}
                   >
                     <a
-                      href="/cv.pdf"
+                      href={asset("/cv.pdf")}
                       target="_blank"
                       rel="noopener noreferrer"
                       data-cursor="hover"

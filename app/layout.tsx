@@ -11,6 +11,7 @@ import SeasonProvider, {
 import LanguageProvider, {
   LANG_BOOT_SCRIPT,
 } from "@/components/LanguageProvider";
+import { asset } from "@/lib/asset";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -39,6 +40,16 @@ export const metadata: Metadata = {
     title: "Aditya Pande — Backend Developer | DevOps Engineer",
     description:
       "Interactive 3D developer portfolio showcasing production e-commerce backends, Kubernetes microservices, AWS cloud infrastructure, and DevOps pipelines.",
+  },
+  icons: {
+    icon: [
+      { url: asset("/favicon.ico") },
+      { url: asset("/favicon-32x32.png"), sizes: "32x32", type: "image/png" },
+      { url: asset("/favicon-192x192.png"), sizes: "192x192", type: "image/png" },
+    ],
+    apple: [
+      { url: asset("/apple-touch-icon.png"), sizes: "180x180", type: "image/png" },
+    ],
   },
 };
 

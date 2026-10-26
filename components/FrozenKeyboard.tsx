@@ -19,6 +19,7 @@ import { useSeason } from "@/components/SeasonProvider";
 import { useLanguage } from "@/components/LanguageProvider";
 import * as THREE from "three";
 import { SKILLS_GRID, type SkillIcon } from "@/lib/skills";
+import { asset } from "@/lib/asset";
 
 // Per-section keyboard "states" — same idea as Naresh's animated-background-
 // config.ts, but for our R3F keyboard. Values are tweened toward via lerp
@@ -328,9 +329,9 @@ function installAudioUnlock() {
 // hover for variety. Fetched + decoded once on first play; subsequent hovers
 // just spawn a fresh BufferSource (cheap, can overlap).
 const KEY_SOUND_URLS = [
-  "/sounds/switch_press.mp3",
-  "/sounds/switch_release.mp3",
-] as const;
+  asset("/sounds/switch_press.mp3"),
+  asset("/sounds/switch_release.mp3"),
+];
 const keySoundBuffers: (AudioBuffer | null)[] = [null, null];
 let keySoundsLoading: Promise<void> | null = null;
 function loadKeySounds(ctx: AudioContext): Promise<void> {
@@ -783,7 +784,7 @@ function Keyboard({ mobile }: { mobile: boolean }) {
                 letter stays fixed regardless of how long the title is. */}
             <Text3D
               key={hoveredIcon.slug}
-              font="/fonts/space_grotesk_bold.typeface.json"
+              font={asset("/fonts/space_grotesk_bold.typeface.json")}
               size={0.25}
               height={0.1}
               curveSegments={12}

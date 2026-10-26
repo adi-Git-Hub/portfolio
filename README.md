@@ -51,8 +51,8 @@ An immersive, interactive developer portfolio built with **Next.js 16**, **React
 
 ```bash
 # Clone the repository
-git clone https://github.com/adi-Git-Hub/portfolio-urwashi.git
-cd portfolio-urwashi
+git clone https://github.com/adi-Git-Hub/portfolio.git
+cd portfolio
 
 # Install dependencies
 npm install

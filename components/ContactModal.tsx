@@ -72,12 +72,16 @@ export default function ContactModal({
 
     setIsSubmitting(true);
 
-    // 1. Dispatch to our backend API (/api/contact) to store inquiry and trigger email dispatch
+    // 1. Dispatch directly to FormSubmit so inquiries are emailed to aditya.dev.pande@gmail.com
     try {
-      await fetch("/api/contact", {
+      await fetch("https://formsubmit.co/ajax/aditya.dev.pande@gmail.com", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
         body: JSON.stringify({
+          _subject: `New Portfolio Inquiry [${selectedPurpose.toUpperCase()}]: ${trimmedName}`,
           name: trimmedName,
           email: trimmedEmail,
           purpose: selectedPurpose,
