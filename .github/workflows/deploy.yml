@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -35,12 +35,21 @@ jobs:
         env:
           NEXT_PUBLIC_BASE_PATH: /portfolio
           GITHUB_ACTIONS: "true"
-        run: npm run build
+        run: |
+          npm run build
+          touch ./out/.nojekyll
 
-      - name: Upload artifact
+      - name: Upload artifact for GitHub Actions Pages
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
+
+      - name: Deploy to gh-pages branch (Static Branch Backup)
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./out
+          publish_branch: gh-pages
 
   deploy:
     environment:
@@ -51,4 +60,5 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
+        continue-on-error: true
         uses: actions/deploy-pages@v4
